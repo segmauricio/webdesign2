@@ -1,4 +1,9 @@
-function TablaMultiplicion(a){
+//Con lo aprendido en la clase, escribe un programa en JavaScript que imprima por consola la tabla de multiplicación,
+//multiplicando el valor por los números 1 hasta el 10.
+//En el cuerpo del programa se le asigna a una variable el valor de la tabla que se desea obtener
+//y al ejecutar se debe obtener en la salida con el siguiente formato:
+
+function TablaMultiplicacion(a){
   console.log("---------------------------------------")
   console.log("Imprimiendo tabla del "+ a +"");
   console.log("---------------------------------------")
@@ -8,9 +13,12 @@ function TablaMultiplicion(a){
 		console.log(a + "x" + i + "=" + a * i);
 	}
 }
-TablaMultiplicion(5);
+TablaMultiplicacion(5);
 console.log("=======================================")
 
+//Utilizando como base el primer ejercicio anterior, modificarlo para que en lugar de recibir solo un valor, reciba dos.
+// El primero para indicarle el numero inicial de las tablas que serán impresas por consola, y el segundo el valor de la última tabla de multiplicación que será impresa.
+//Se deberá controlar que el primer valor en ningún caso sea mayor el segundo, en caso de serlo se debe enviar un mensaje indicando que no es posible procesar la petición.
 var num1=3;
 var num2=9;
 var tabla=0;
