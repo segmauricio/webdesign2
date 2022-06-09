@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  font-family: Helvetica;
+  width: 480px;
+  margin: 0 auto;
+}
+body{
+  background: #999999;
+}
+ul{
+  list-style: none;
+}
+#menu{
+  text-align: right;
+}
+#menu li>a{
+  background-color: #CCCCCC;
+  color: #999999;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li>a:hover{
+  color: black;
+}
+#menu>li{
+  float: left;
+  text-align:center
+}
+#titlecard,
+#btnNew{
+    display: inline-block;
+    vertical-align: top;
+}
