@@ -7,14 +7,12 @@ header{
   width: 480px;
   margin: 0 auto;
 }
-body{
-  background: #999999;
-}
 ul{
   list-style: none;
 }
 #menu{
   text-align: right;
+  margin-top: 20px;
 }
 #menu li>a{
   background-color: #CCCCCC;
@@ -30,6 +28,10 @@ ul{
 #menu>li{
   float: left;
   text-align:center
+}
+.menunav{
+  margin-top:35px;
+  padding-top: 100px;
 }
 #titlecard,
 #btnNew{

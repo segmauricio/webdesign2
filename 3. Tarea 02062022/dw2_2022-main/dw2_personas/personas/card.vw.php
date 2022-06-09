@@ -5,9 +5,9 @@
   <div class="card-body">
     <div class="row">
     <div class="col">
-      <p class="card-text">CI Nro.:<?php echo $data['cin']; ?> </p>
+      <p class="card-text">Nº de CI: <?php echo $data['cin']; ?> </p>
       <p class="">Edad: <?php echo edadPersona($data['fenac']); ?></span></a></p>
-      <p class="card-text">Localidad:<?php echo nombreCiudad($link,$data['ciudad_id']); ?> </p>
+      <p class="card-text">Localidad: <?php echo nombreCiudad($link,$data['ciudad_id']); ?> </p>
     </div>
     <div class="col">
       <a href="<?php echo "index.php?mod=edit&id=".$data["id"]; ?>" class="btn btn-outline-info" name="editar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

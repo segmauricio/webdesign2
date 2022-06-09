@@ -3,7 +3,7 @@ if ($res){
 $data=mysqli_fetch_array($res);
 }
  ?>
-<h3>Personas</h3>
+<h3>Formulario de personas</h3>
 <form class="" action="index.php" method="post">
   <div class="form-group col-md-6">
   <input type="hidden" name="id" value="<?php if ($data['id']){ echo $data['id'];  } else { echo -1;} ?>">  <br>
@@ -42,7 +42,7 @@ $data=mysqli_fetch_array($res);
      ?>
   </select>
   <br>
-  <button type="submit" class="btn btn-outline-warning" name="enviar">Enviar</button> <a href="index.php"><a href="index.php" name="volver" class="btn btn-outline-warning">Volver</a>
+  <button type="submit" class="btn btn-warning" name="enviar">Enviar</button> <a href="index.php"><a href="index.php" name="volver" class="btn btn-primary">Volver</a>
   <form class="" action="index.php" method="post">
     </form>
 </form>

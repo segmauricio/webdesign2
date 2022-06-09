@@ -1,7 +1,7 @@
 <?php
 $res=mostrarCiudades($link);
  ?>
- <div class="container">
+<div class="text-left">
      <div class="row">
        <div class="col">
          <h3>CIUDADES</h3>
