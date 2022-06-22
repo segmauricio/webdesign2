@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="estilos/estilos.css">
 </head>
     <body style="background: #CCCCCC">
-    <nav class="navbar navbar-dark bg-dark">
-        <nav class="menunav">
-          <ul id="menu">
+    <nav class="navbar navbar-dark bg-dark justify-content-center">
+        <nav>
+          <ul>
             <a class="btn btn-outline-warning" href="/dw2_2022-main/dw2_personas/ciudades/">CIUDADES</a>
             <a class="btn btn-outline-warning" href="/dw2_2022-main/dw2_personas/personas/">PERSONAS</a>
             <a class="btn btn-outline-warning" href="/dw2_2022-main/dw2_personas/">Volver a inicio</a>

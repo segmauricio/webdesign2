@@ -1,16 +1,19 @@
 <?php
 $res=mostrarTodos($link);
  ?>
- <div class="text-left">
-     <div class="row">
-       <div class="col">
-         <H3 class="font-weight-light">PERSONAS</h3>
-       </div>
-       <div class="col">
-         <a id="btnNew" href="index.php?mod=new" class="btn btn-warning" disabled class="text-left">Nuevo +</a>
-      </div>
-   </div>
- </div>
+ <br>
+ <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <h3>PERSONAS</h3>
+      </li>
+      <li class="nav-item">
+         <a id="btnNew" href="index.php?mod=new" class="btn btn-warning" disabled>Nuevo +</a>
+      </li>
+      <li class="nav-item">
+        <a href="json.php" target="new" class="btn btn-primary">JSON +</a>
+      </li>
+ </ul>
+ <br>
 <?php
   while ($data=mysqli_fetch_array($res)){
    include 'card.vw.php';

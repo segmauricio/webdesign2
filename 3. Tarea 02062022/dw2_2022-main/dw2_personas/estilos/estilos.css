@@ -2,17 +2,9 @@
   margin: 0;
   padding: 0;
 }
-header{
-  font-family: Helvetica;
-  width: 480px;
-  margin: 0 auto;
-}
+
 ul{
   list-style: none;
-}
-#menu{
-  text-align: right;
-  margin-top: 20px;
 }
 #menu li>a{
   background-color: #CCCCCC;
@@ -28,13 +20,4 @@ ul{
 #menu>li{
   float: left;
   text-align:center
-}
-.menunav{
-  margin-top:35px;
-  padding-top: 100px;
-}
-#titlecard,
-#btnNew{
-    display: inline-block;
-    vertical-align: top;
 }
