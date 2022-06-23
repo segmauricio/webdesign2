@@ -2,7 +2,7 @@ document.getElementById('personasList').onclick=showListPersonas;
 document.getElementById('ciudadesList').onclick=showListCiudades; // asigno la funcion limpiarTabla al evento click del boton
 personas=[]; // declara el array
 ciudades=[];
-rutaJSON="http://127.0.0.1/imura/dw2_personas/";
+rutaJSON="http://127.0.0.1/4. Tarea 16062022/dw2_personas/";
 
 window.onload=iniciarApp();
 
@@ -10,7 +10,7 @@ function deleteErrors(){
   document.getElementById('error').innerHTML="";
 }
 
-/// procesar formulario
+///Procesar formulario
 function showListCiudades(){
     console.log("showListCiudades");
     //mostrarCiudades();
@@ -22,6 +22,7 @@ function showListCiudades(){
     deleteErrors();
     cleanStorage();
 }
+
 function showListPersonas(){
     //mostrarPersonas();
     console.log("showListPersonas");
@@ -33,6 +34,7 @@ function showListPersonas(){
     deleteErrors();
     cleanStorage();
 }
+
 function showFormCiudades(){
     console.log("showFormCiudades");
     $('#datosCiudades').hide();
@@ -44,8 +46,8 @@ function showFormCiudades(){
           $('#error').show();
           console.log("Errores mostrandose");
         }
-
 }
+
 function showFormPersonas(){
     console.log("showFormPersonas");
     $('#datosCiudades').hide();
@@ -56,8 +58,8 @@ function showFormPersonas(){
           $('#error').show();
           console.log("Errores mostrandose");
         }
+}
 
-  }
 function iniciarApp()
   {
     console.log("inicializando app");

@@ -1,5 +1,4 @@
 <?php
-
 function mostrarCiudades($link) {
   $sql="SELECT * FROM ciudades order by id ";
   $resultado = mysqli_query($link, $sql);
@@ -17,18 +16,15 @@ function mostrarCiudad($link,$id){
      return $resultado;
       //printf("La selección devolvió %d filas.\n", mysqli_num_rows($resultado));
     }
-
-
 }
 function agregarCiudad($link,$datos){
   //print_r($datos);
   $sql='INSERT INTO ciudades(ciudad) values ("'.$datos['ciudad'] .'") ';
   $resultado = mysqli_query($link, $sql);
   if ($resultado) { return 1; } else { return 0; }
-
 }
 function editarCiudad($link,$datos){
-echo $sql='update ciudades set ciudad="'.$datos['ciudad'].'" where id='.$datos['id']; // este no corrio
+$sql='update ciudades set ciudad="'.$datos['ciudad'].'" where id='.$datos['id'];
 $resultado = mysqli_query($link, $sql);
 if ($resultado) { return 1; } else { return 0; }
 }
@@ -44,5 +40,4 @@ function nombreCiudad($link,$id){
     $d=mysqli_fetch_array($resultado);
      return $d['ciudad'];
     }}
-
  ?>

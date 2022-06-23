@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+#menu li>a{
+  background-color: #CCCCCC;
+  color: #999999;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li>a:hover{
+  color: black;
+}
+#menu>li{
+  float: left;
+  text-align:center
+}

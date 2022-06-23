@@ -1,7 +1,7 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+error_reporting(E_ALL ^ E_NOTICE);
 
-function conectar(){
+function conectar() {
   $server="localhost";     //127.0.0.1
   $usuario="root";
   $pass="";
@@ -10,8 +10,8 @@ function conectar(){
 
   if (!$enlace) {
       echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-      echo "error de depuración: " . mysqli_connect_errno() . PHP_EOL;
-      echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
+      echo "Error de depuración: " . mysqli_connect_errno() . PHP_EOL;
+      echo "Error de depuración: " . mysqli_connect_error() . PHP_EOL;
       exit;
   } else {
     return $enlace;
