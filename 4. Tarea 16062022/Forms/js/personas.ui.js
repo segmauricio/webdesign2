@@ -7,20 +7,20 @@ window.onload=iniciarApp;
 function limpiarPersonas() //limpia el contenido html de datos
 {
   document.getElementById('tab_datos').innerHTML="";
-  console.log("limpiando");
+  console.log("Limpiando...");
 }
 
 function mostrarPersonas()
   {
     //getCiudades();
-    console.log("cargando tabla");
+    console.log("Cargando tabla....");
     if (personas!=null)
     {
-    salida="<h3>Personas <a id='btNuevo'data-id='-1' class='btn btn-light ' >Nuevo</a> </h3>";
+    salida="<br><h3>Personas <a id='btNuevo'data-id='-1' class='btn btn-outline-warning'>Nuevo</a> </h3>";
     for (var i = 0; i < personas.length; i++) {
         console.log("girando");
         nombredeCiudad=getCiudadNameById(personas[i].ciudad_id);
-        salida=salida+"<div class='card'><div class='card-header'>"+personas[i].apellido+", "+personas[i].nombre+"</div><div class='card-body'><div class='row'><div class='col'><p class='card-text'><label>CI Nro.:</label>"+personas[i].cin+ "</p><p class=''><label>Fecha de Nacimiento:</label>" +personas[i].fenac+"</p><p class='card-text'><label>Localidad:</label>"+nombredeCiudad+"</p></div><div class='col'><a data-id='"+personas[i].id+"'  class='btn btn-light btn-editPersona'>Editar</a><a data-id="+personas[i].id+" ''  class='btn btn-light btn-borrarPersona'>Borrar</a></div></div></div></div>";
+        salida=salida+"<div class='card'><div class='card-header'>"+personas[i].apellido+", "+personas[i].nombre+"</div><div class='card-body'><div class='row'><div class='col'><p class='card-text'><label>CI Nro.: </label>"+personas[i].cin+ "</p><p class=''><label>Fecha de Nacimiento: </label>" +personas[i].fenac+"</p><p class='card-text'><label>Localidad: </label>"+nombredeCiudad+"</p></div><div class='col'><a data-id='"+personas[i].id+"'  class='btn btn-outline-secondary btn-editPersona'>Editar</a><a data-id="+personas[i].id+" ''  class='btn btn-outline-secondary btn-borrarPersona'>Borrar</a></div></div></div></div>";
         console.log(getCiudadNameById(personas[i].ciudad_id))
         //salida=salida+"<tr><td>"+i+"</td><td>"+personas[i].cin+"</td><td>"+personas[i].apellido+"</td><td>"+personas[i].nombre+"</td><td>"+personas[i].fenac+"</td> <td><a class='btEditar btn btn-outline-warning ' data-idx='"+personas[i].id+"'>Editar</a></td> <td><a class='btBorrar btn btn-outline-danger ' data-idx='"+personas[i].id+"'>Borrar</a></td></tr>"  ciudades[personas[i].ciudad_id].ciudad+
         //console.log(salida);

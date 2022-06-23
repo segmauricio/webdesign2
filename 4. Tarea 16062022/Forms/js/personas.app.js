@@ -50,25 +50,25 @@ function guardarPersona()
     if(flag==false){
       error="<div class='container' style='border-style: solid; border-radius: 10px; margin-top: 5%; margin-bottom: 5%'><p>Datos no fueron procesados correctamente.<br><div id='errores'></div></p></div>";
     }
-    errores=errores+"- El número de documento no puede estar vacío.<br>";
+    errores=errores+"- El DNI no debe estar vacío.<br>";
   }
   if(document.getElementById('nombre').value == ""){
     if(flag==false){
       error="<div class='container' style='border-style: solid; border-radius: 10px; margin-top: 5%; margin-bottom: 5%'><p>Datos no fueron procesados correctamente.<br><div id='errores'></div></p></div>";
     }
-    errores=errores+"- El nombre no puede estar vacío.<br>";
+    errores=errores+"- El nombre no debe estar vacío.<br>";
   }
   if(document.getElementById('apellido').value == ""){
     if(flag==false){
       error="<div class='container' style='border-style: solid; border-radius: 10px; margin-top: 5%; margin-bottom: 5%'><p>Datos no fueron procesados correctamente.<br><div id='errores'></div></p></div>";
     }
-    errores=errores+"- El apellido no puede estar vacío.<br>";
+    errores=errores+"- El apellido no debe estar vacío.<br>";
   }
   if(document.getElementById('fenac').value == ""){
     if(flag==false){
       error="<div class='container' style='border-style: solid; border-radius: 10px; margin-top: 5%; margin-bottom: 5%'><p>Datos no fueron procesados correctamente.<br><div id='errores'></div></p></div>";
     }
-    errores=errores+"- La fecha no puede estar vacía.<br>";
+    errores=errores+"- La fecha no debe estar vacía.<br>";
   }
     if(error==""){
       let p={
