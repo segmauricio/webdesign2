@@ -4,15 +4,15 @@ var sendCiudad=document.getElementById("sendFormCiudad");
 sendCiudad.onclick=saveCiudades;
 function mostrarCiudades()
     {
-        console.log("Listando ciudades...");
+        console.log("listando ciudades");
 
         if (ciudades!=null)
         {
-        salida='<br><h3>Ciudades <span><a  class="btn btn-outline-warning" id="btn-nuevo" class="" data-id="-1" >Nuevo</a></span></h3>';
+        salida='<br><br><h3 class="text-center">Ciudades <span><a  class="btn btn-outline-secondary" id="btn-nuevo" class="" data-id="-1" >Nuevo</a></span></h3>';
         for (var i = 0; i < ciudades.length; i++) {
            // console.log("girando");
 
-            salida=salida+"<div class='card'><div class='card-header'>"+ciudades[i].id+"</div><div class='card-body'><div class='row'><div class='col'><p class='card-text'><label>Ciudad:</label>"+ciudades[i].ciudad+"</p></div><div class='col'><a data-id='"+ciudades[i].id+"' class='btn btn-outline-secondary btn-editcid'>Editar</a><a data-id='"+ciudades[i].id+"' class='btn btn-outline-secondary btn-delcid'>Borrar</a></div></div></div></div>";
+            salida=salida+"<div class='card'><div class='card-header'>"+ciudades[i].id+"</div><div class='card-body'><div class='row'><div class='col'><p class='card-text'><label>Ciudad: </label>"+ciudades[i].ciudad+"</p></div><div class='col'><a data-id='"+ciudades[i].id+"' class='btn btn-outline-secondary btn-editcid'>Editar</a><a data-id='"+ciudades[i].id+"' class='btn btn-outline-danger btn-delcid'>Borrar</a></div></div></div></div><br>";
           }
           document.getElementById('datosCiudades').innerHTML=salida;
           btns=document.getElementsByClassName('btn-editcid');

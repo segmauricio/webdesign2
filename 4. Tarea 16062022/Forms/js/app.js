@@ -2,7 +2,7 @@ document.getElementById('personasList').onclick=showListPersonas;
 document.getElementById('ciudadesList').onclick=showListCiudades; // asigno la funcion limpiarTabla al evento click del boton
 personas=[]; // declara el array
 ciudades=[];
-rutaJSON="http://127.0.0.1\4. Tarea 16062022\dw2_personas/";
+rutaJSON="http://127.0.0.1/dw2_2022-main/4. Tarea 16062022/dw2_personas/";
 
 window.onload=iniciarApp();
 

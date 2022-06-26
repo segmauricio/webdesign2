@@ -1,7 +1,7 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
-function conectar() {
+function conectar(){
   $server="localhost";     //127.0.0.1
   $usuario="root";
   $pass="";

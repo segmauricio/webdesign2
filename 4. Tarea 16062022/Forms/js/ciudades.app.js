@@ -53,7 +53,7 @@ function saveCiudades(){
         showListCiudades();
     }
     else{
-      error="<div class='container' style='border-style: solid; border-radius: 10px; margin-top: 5%; margin-bottom: 5%'><p>Los datos no fueron procesados correctamente.<br>- El campo no debe estar vacío.</p></div>";
+      error="<div class='container' style='border-style: solid; border-radius: 10px; margin-top: 5%; margin-bottom: 5%'><p>Los datos no fueron procesados correctamente.<br>- El campo CIUDADES no puede estar vacío.</p></div>";
       document.getElementById('error').innerHTML=error;
       showFormCiudades();
     }
@@ -61,7 +61,7 @@ function saveCiudades(){
 
 function deleteCiudades(e)
     {
-    console.log("Borrando ciudades...");
+    console.log("borrar ciudades...");
     let idxe=e.target.attributes["data-id"].value;
     url=rutaJSON+"ciudades/api.php?mod=delete&id="+idxe;
     //console.log(url);

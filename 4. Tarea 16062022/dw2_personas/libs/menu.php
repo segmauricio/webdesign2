@@ -10,9 +10,9 @@
     <nav class="navbar navbar-dark bg-dark justify-content-center">
         <nav>
           <ul>
-            <a class="btn btn-outline-warning" href="/dw2_2022-main/dw2_personas/ciudades/">CIUDADES</a>
-            <a class="btn btn-outline-warning" href="/dw2_2022-main/dw2_personas/personas/">PERSONAS</a>
-            <a class="btn btn-outline-warning" href="/dw2_2022-main/dw2_personas/">Volver a inicio</a>
+            <a class="btn btn-outline-warning" href="/dw2_2022-main/4. Tarea 16062022/dw2_personas/ciudades/">CIUDADES</a>
+            <a class="btn btn-outline-warning" href="/dw2_2022-main/4. Tarea 16062022/dw2_personas/personas/">PERSONAS</a>
+            <a class="btn btn-outline-warning" href="/dw2_2022-main/4. Tarea 16062022/dw2_personas/">Volver a inicio</a>
           </ul>
         </nav>
     </nav>
